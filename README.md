@@ -9,5 +9,3 @@ Simple, clean and just like the design team would have wanted it.
 
 ### How to Use
 Extension can be used as is by cloning the repo and opening Chrome extensions settings, ticking the Developer mode check-box and using Load unpacked extension button to browse to the source directory.
-
-Alternative you can get the extension from [here](https://chrome.google.com/webstore/detail/yahoo-mail-no-adds/codpoiknlfkbnbhpgjfhhdogpaennagh)
