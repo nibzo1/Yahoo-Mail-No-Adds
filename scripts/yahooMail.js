@@ -1,16 +1,17 @@
 function changeUI() {
-
   $('#uhWrapper').css('padding-top','22px');
-  $('#masterNav').remove();
+  $('#masterNav, #theAd').remove();
   removeListAdd();
-  $('#theAd').remove();
-  $('#yucs').css('max-width','100%');
-  $('#main').css('max-width','100%');
-  $('.frost-container').css('right','0');
-  $('#yuhead-bucket').css('max-width','100%');
-  $('#shellcontent').css('right','0px');
+  $('#main, #yucs, #yuhead-bucket').css('max-width','100%');
+  $('#shellcontent, .frost-container').css('right','0px');
   $('#shellcontent').removeClass('wide-right-rail');
 }
+
+function removeListAdd() {
+  $('.mb-list-ad, .search-message-container-ad').remove();
+}
+
+
 changeUI();
 
 $(document).ready(function() {
@@ -22,11 +23,5 @@ $(document).ajaxSuccess(function() {
 });
 
 $('body').bind('DOMSubtreeModified', function() {
-  if ($('.mb-list-ad').length) {
     removeListAdd();
-  }
 });
-
-function removeListAdd() {
-  $('.mb-list-ad').remove();
-}
