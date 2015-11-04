@@ -19,7 +19,7 @@ function removeListAdd() {
 changeUI();
 
 // Listen for page to load
-YN(window).load(function() {
+YN(function() {
   changeUI();
 });
 
