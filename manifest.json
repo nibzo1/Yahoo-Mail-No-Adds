@@ -12,7 +12,7 @@
 	],
 	"content_scripts": [
 		{
-			"matches": ["*://*.mail.com/*"],
+			"matches": ["*://*.mail.yahoo.com/*"],
 			"js": ["libs/jquery.min.2.0.3.js", "scripts/yahooMail.js"]
 		}
 	]
