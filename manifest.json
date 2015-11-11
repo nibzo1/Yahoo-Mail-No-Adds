@@ -1,18 +1,18 @@
  {
 	"name": "Yahoo Mail No Adds",
 	"description": "This extension removes adds in yahoo mail",
-	"version": "1.0.0",  
-	"manifest_version": 2,		
+	"version": "1.0.1",
+	"manifest_version": 2,
 	"permissions": [
-		"*://*.mail.yahoo.com/*"
+		"*://*.mail.yahoo.*/*"
 	],
-	"icons": { "128": "images/icon.png" },	
+	"icons": { "128": "images/icon.png" },
 	"web_accessible_resources": [
 		"libs/jquery.min.2.0.3.js"
 	],
 	"content_scripts": [
 		{
-			"matches": ["*://*.mail.yahoo.com/*"],	
+			"matches": ["*://*.mail.yahoo.*/*"],
 			"js": ["libs/jquery.min.2.0.3.js", "scripts/yahooMail.js"]
 		}
 	]
