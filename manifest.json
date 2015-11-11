@@ -4,7 +4,7 @@
 	"version": "1.0.1",
 	"manifest_version": 2,
 	"permissions": [
-		"*://*.mail.yahoo.*/*"
+		"*://*.mail.yahoo.com/*"
 	],
 	"icons": { "128": "images/icon.png" },
 	"web_accessible_resources": [
@@ -12,7 +12,7 @@
 	],
 	"content_scripts": [
 		{
-			"matches": ["*://*.mail.yahoo.*/*"],
+			"matches": ["*://*.mail.com/*"],
 			"js": ["libs/jquery.min.2.0.3.js", "scripts/yahooMail.js"]
 		}
 	]
