@@ -1,7 +1,7 @@
  {
 	"name": "Yahoo Mail No Adds",
 	"description": "This extension removes adds in yahoo mail",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"manifest_version": 2,
 	"permissions": [
 		"*://*.mail.yahoo.com/*"
