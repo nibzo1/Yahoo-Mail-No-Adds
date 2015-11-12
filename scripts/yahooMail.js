@@ -4,6 +4,7 @@ var YN = jQuery.noConflict();
 function changeUI() {
   YN('#uhWrapper').css('padding-top','22px');
   YN('#masterNav, #theAd').remove();
+  YN('div.listnav-outter div[id^=slot]').remove();
   removeListAdd();
   YN('#main, #yucs, #yuhead-bucket').css('max-width','100%');
   YN('#shellcontent, .frost-container').css('right','0px');
